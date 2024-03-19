@@ -1,0 +1,140 @@
+:root {
+    --light-grey: #f5f6f7;
+    --dark-blue: #268147;
+    --fcc-blue: #1b1b32;
+    --light-yellow: #fecc4c;
+    --dark-yellow: #feac32;
+    --light-pink: #ffadad;
+    --dark-red: #850000;
+    --light-green: #acd157;
+    --darker-blue: #18542d;
+  }
+  
+  body {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    background-color: transparent;
+    color: var(--light-grey);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 25px;
+    text-decoration-line: overline underline;
+    text-decoration-color: var(--light-green);
+  }
+
+  .title {
+    background-color:rgb(17, 59, 95);
+    padding: 0px 2px 8px 2px;
+    width: 260px; 
+    height: 35px;
+    margin: 0 auto; 
+    border: 5px solid rgb(219, 249, 173);
+    border-style: ridge;
+    border-radius: 15px;
+    display: flex; 
+    justify-content: center; 
+}
+
+
+  
+  h2{
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 16px;
+  }
+
+  p{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  #scoreboard {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .score-container {
+    flex: 0 0 50%; 
+    box-sizing: border-box;
+    padding: 5px; 
+    min-height: 51px;
+  }
+  
+  #history_page {
+    position: absolute;
+    padding:10px;
+    width: 24%;
+    min-height:487.5px;
+    top: 9.8%; 
+    right: 19%; 
+    background-color:rgb(5, 64, 98);
+    border: 13px rgb(208, 245, 121);
+    border-style:ridge;
+    border-radius: 15px;
+}
+
+.container {
+  width: 80%;
+  max-width: 500px; 
+  margin: 10px auto;
+  margin-left: 15%; 
+  padding: 5px 10px;
+  background-color:rgb(5, 64, 98);
+  border: 13px rgb(208, 245, 121);
+  border-style:ridge;
+  border-radius: 15px;
+}
+
+  h1{
+    margin: 10px auto;
+  }
+  
+  label,
+  legend {
+    font-weight: bold;
+    text-shadow: 2px 2px 5px var(--dark-red);
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--light-green);
+    border: 3px solid var(--dark-blue);
+    border-radius: 5px;
+    color: var(--darker-blue);
+  }
+  
+  
+
+
+  input,
+  select {
+    min-height: 24px;
+    color: black;
+  }
+  
+  fieldset,
+  label,
+  button,
+  input,
+  select {
+    margin-bottom: 3px;
+  }
+  
+  html {
+    background-color: rgb(170, 233, 247);
+    background-repeat: repeat;
+    background-size: 250px 150px; 
+}
+
+  
+  

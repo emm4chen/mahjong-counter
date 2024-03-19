@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mahjong Counter</title>
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>Mahjong Counter</h1>
+      </div>
+      
+      <div class="container">
+        <form id="mahjong-counter">
+          <fieldset id="players">
+            <legend>Enter Players</legend>
+            <label for="name">Player 1:</label>
+            <input class="inputName" type="text" id="p1" placeholder="Enter name..." name="name"><br>
+            <label for="name">Player 2:</label>
+            <input class="inputName" type="text" id="p2" placeholder="Enter name..." name="name"><br>
+            <label for="name">Player 3:</label>
+            <input class="inputName" type="text" id="p3" placeholder="Enter name..." name="name"><br>
+            <label for="name">Player 4:</label>
+            <input class="inputName" type="text" id="p4" placeholder="Enter name..." name="name"><br>
+            <button type="submit" id="add-players">Submit</button>
+          </fieldset>
+
+          
+          <fieldset id="winning">            
+            <legend>Select Winner & Amount</legend>
+              <select id="winner-name" name="options">
+                <option value="select" selected>Select Winner...</option>
+                <option value="p1"></option>
+                <option value="p2"></option>
+                <option value="p3"></option>
+                <option value="p4"></option>
+              </select>
+              <label for="amount-lost">$</label>
+              <input id="dollars" type="number" value="1" name="dollars">
+              <button type="submit" id="zi-mo">zi mo</button>
+          </fieldset>
+             
+          <fieldset id="losing">        
+            <legend>Select Loser</legend>
+              <select id="loser-name" name="options">
+                <option value="select" selected>Select Loser...</option>
+                <option value="l1"></option>
+                <option value="l2"></option>
+                <option value="l3"></option>
+              </select>
+        
+              <button type="submit" id="chi">chi</button>
+              <button type="submit" id="pong">pong</button>    
+          </fieldset>
+
+          <fieldset id="history_page">
+            <legend>History</legend>
+            <div id="history_container">
+              <p id="h"></p>
+            </div>
+            
+        </fieldset>
+
+          <fieldset id="scoreboard">            
+            <legend>Stats</legend>
+            <div class="score-container">
+                <h2 id="p1_score"></h2>
+                <p id="p1_transfer"></p>
+            </div>
+            <div class="score-container">
+                <h2 id="p2_score"></h2>
+                <p id="p2_transfer"></p>
+            </div>
+            <div class="score-container">
+                <h2 id="p3_score"></h2>
+                <p id="p3_transfer"></p>
+            </div>
+            <div class="score-container">
+                <h2 id="p4_score"></h2>
+                <p id="p4_transfer"></p>
+            </div>
+        </fieldset>
+        
+        </form>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
